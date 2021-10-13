@@ -1,0 +1,36 @@
+/* @import "https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css"; */
+/* @import "https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"; */
+
+.fundo__menu {
+    background-color: #070738;
+}
+
+.icone {
+    color: #dc143c;
+}
+
+/* .navbar navbar-expand-lg navbar-dark fundo__menu {
+   display: flex;
+   justify-content: center;
+}  */
+
+/* .player {
+display: flex;
+align-items:baseline;
+justify-content: center;
+} */
+
+/* alterando a altura das imagens do carosel  */
+/* .carousel-item {
+    height: 100vh;
+} */
+
+ /* .container-fluid a {
+    display: flex;
+    justify-content: center;
+} */
+/*
+.control-part{
+    display: flex;
+    justify-content: center;
+} */
