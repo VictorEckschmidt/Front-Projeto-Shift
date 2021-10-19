@@ -8,8 +8,8 @@ export default {
     this.nextTrack = document.querySelector("#next");
     this.previousTrack = document.querySelector("#previous");
     this.seekbar = document.querySelector("#seekbar");
-    // this.currentDuration = document.querySelector("#current-duration");
-    // this.totalDuration = document.querySelector("#total-duration");
+    this.currentDuration = document.querySelector("#current-duration");
+    this.totalDuration = document.querySelector("#total-duration");
     this.vol = document.querySelector("#vol-icon");
     this.volumeControl = document.querySelector("#volume-control");
  },
@@ -20,7 +20,7 @@ export default {
 
  actions() {
    this.playPause.onclick = () => this.togglePlayPause();
-  //  this.audio.onended = () => this.next();
+   this.audio.onended = () => this.next();
 
    this.vol.onclick = () => this.toggleMute();
    this.volumeControl.oninput = () => this.setVolume(this.volumeControl.value);
@@ -30,10 +30,10 @@ export default {
    this.seekbar.oninput = () => this.setSeekbar(this.seekbar.value);
    this.seekbar.onchange = () => this.setSeekbar(this.seekbar.value);
 
-  //  this.seekbar.max = this.audio.duration;
-  //  this.totalDuration.innerText = secondsToMinutes(this.audio.duration);
+   this.seekbar.max = this.audio.duration;
+   this.totalDuration.innerText = secondsToMinutes(this.audio.duration);
 
-  //  this.audio.ontimeupdate = () => this.timeUpdate();
+   this.audio.ontimeupdate = () => this.timeUpdate();
 
    this.nextTrack.onclick = () => this.next();
    this.previousTrack.onclick = () => this.back();

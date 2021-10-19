@@ -10,7 +10,7 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <!-- Ícones do Bootstrap -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"> -->
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet"
@@ -25,76 +25,46 @@
 <body>
 
     <!-- menu de navegação -->
-    
-
-    <nav class="navbar navbar-expand-lg navbar-dark fundo__menu">
+    <nav class="navbar navbar-expand-lg navbar-dark fundo__menu ">
     
         <div class="container-fluid">
-            <a class="navbar-brand" href="./Index.html">My Instrument Sound</a>
-            <a href="">
+            <!-- <a class= "navbar-brand disabled mr-5 col-sm">My Instrument Sound</a> -->
+            
                 <div class="player">
                     <div class="control_part">
-                        <div class="song_title">
-                            <h6>NomeMusica</h6>
-                        </div>
-                        <div class="control_buttons">
-                            <div class="range_slider">
-                                <!-- <div class="col s2" id="current-duration">00:00</div> -->
+                        <div class="song_title text-light mx-4">
+                            <h6 class="text-center">NomeMusica</h6>
+                            <div class="d-flex justify-start" id="range_slider">
+                                <div class="col s2" id="current-duration">00:00</div>
                                 <div class="col s6 range-field valign-wrapper">
                                     <input type="range" min="0" max="0" id="seekbar" step="1" />
                                 </div>
-                                <!-- <div class="col s2" id="total-duration">00:00</div> -->
-                                 <button id="vol-icon"><i class='bx bxs-volume-low' ></i></button>
-                                <div class="col s3 range-field valign-wrapper" id="volume">
-                                    <input type="range" min="0" max="100" id="volume-control" step="1" />
-                                </div>
+                                <div class="col s2 mx-2" id="total-duration">00:00</div>
                             </div>
-                            <div class="main_btns">
+                        </div>
+                        <div class="d-flex justify-center" id="control_buttons">
+                            
+                            <div class="d-flex justify-start" id="main_btns">
                                 <button id="previous"><i class='bx bx-skip-previous'></i></button>
-                                <button id="play_pause"><i class='bx bx-play'>play</i></button>
+                                <button id="play_pause">Play</i></button>
                                 <button id="next"><i class='bx bx-skip-next'></i></button>
-                                <!-- <audio src="./Violoes/0-Los Caujaritos.mp3" controls></audio> -->
-                                <!-- <audio controls></audio> -->
-                                <!-- <button id="playPauseButton" onclick="playPause()">Play &#9658;</button>
-                                &nbsp;
-                                &nbsp;
-                                <button>Stop &#9611;</button> -->
- 
-                                <!-- <script> -->
-                                    <!-- // var audio = document.getElementById('audio');
-                                    // var playPauseButton = document.getElementById('playPauseButton');
-                                    // var count = 0;
-
-                                    // function playPause(){
-                                    //     if(count == 0){
-                                    //         count = 1;
-                                    //         audio.play();
-                                    //         playPauseButton.innerHTML = "Pause &#9208;";
-                                    //     } else{
-                                    //         count = 0
-                                    //         audio.pause();
-                                    //         playPauseButton.innerHTML = "Pause &#9208;";
-                                    //     }
-                                    // }
-
-                                    // function stop(){
-                                    //     playPause()
-                                    //     audio.pause();
-                                    //     audio.currentTime = 0;
-                                    // }
-                                </script> -->
-                                <!-- <audio controls></audio> -->
+                                
                             </div>
                             
+                            <div class="col s3 range-field valign-wrapper" id="volume">
+                                <!-- <i class='bx bxs-volume-low'> -->
+                                <!-- <button id="vol-icon"><i class="material-icons">volume_up</i></button> -->
+                                <button id="vol-icon"></i>Mute</button>
+                                <input type="range" min="0" max="100" id="volume-control" step="1" />
+                            </div>
                         </div>
-                        
+
                     </div>
                     
                 </div>
-                
-            </a>
+                <!-- <a class="navbar-brand disabled">My Instrument Sound</a> -->
             <!-- <h1>My Instrument Sound</h1> -->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+            <button class="navbar-toggler col-sm mx-3" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
@@ -167,13 +137,13 @@
         </div>
         <div class="carousel-inner">
             <div class="carousel-item active">
-                <img src="./Img/IMG 1.jpg" class="d-block w-100" alt="Imagem de um show - Pexels.com">
+                <img src="./Img/IMG 1.jpg" class="d-block w-100" alt="Imagem da fabricação de um instrumento">
             </div>
             <div class="carousel-item">
-                <img src="./Img/IMG 2.jpg" class="d-block w-100" alt="Imagem de um show - Pexels.com">
+                <img src="./Img/IMG 2.jpg" class="d-block w-100" alt="Imagem da fabricação de um instrumento">
             </div>
             <div class="carousel-item">
-                <img src="./Img/IMG 3.jpg" class="d-block w-100" alt="Imagem de um show - Pexels.com">
+                <img src="./Img/IMG 3.jpg" class="d-block w-100" alt="Imagem da fabricação de um instrumento">
             </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
@@ -189,12 +159,9 @@
     </div>
     <!-- Fim Elemento carousel -->
 
-
-
-
     <!-- criando um container - 2 classes - contain0er - container-fluid -->
     <div class="container mt-2">
-        <h1 class="bg-primary text-light display-3 p-5">Seu Instrumento</h1>
+        <h1 class="bg-dark text-light display-3 p-5 text-center">Seu Instrumento</h1>
 
         <!-- aqui temos uma linha - ela terá 12 colunas para exibir conteúdo -->
         <div class="row">
@@ -207,7 +174,7 @@
                         <h5 class="card-title">Violino</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk
                             of the card's content.</p>
-                        <a href="./pages/Violino.html" class="btn btn-primary">Assistir...</a>
+                        <a href="./pages/Violino.html" class="btn btn-secondary">Assistir...</a>
                     </div>
                 </div>
             </div>
@@ -221,7 +188,7 @@
                         <h5 class="card-title">Piano</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk
                             of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Assistir...</a>
+                        <a href="#" class="btn btn-secondary">Assistir...</a>
                     </div>
                 </div>
             </div>
@@ -235,7 +202,7 @@
                         <h5 class="card-title">Viola Caipira</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk
                             of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Assistir...</a>
+                        <a href="#" class="btn btn-secondary">Assistir...</a>
                     </div>
                 </div>
             </div>
@@ -249,94 +216,13 @@
                         <h5 class="card-title">Harpa</h5>
                         <p class="card-text">Some quick example text to build on the card title and make up the bulk
                             of the card's content.</p>
-                        <a href="#" class="btn btn-primary">Assistir...</a>
+                        <a href="#" class="btn btn-secondary">Assistir...</a>
                     </div>
                 </div>
             </div>
             <!-- fim 4o. card -->
         </div>
         <!-- fim da linha -->
-
-        <!-- tabela  -->
-        <div class="row my-3">
-            <h2 class="fundo__menu text-light display-3 p-3 my-4">Vídeos relacionados</h2>
-            <div class="col-12 col-sm-12 col-md-12">
-                <table class="table table-hover table-responsive">
-                    <!-- cabeçalho da tabela -->
-                    <thead class="text-center table-dark">
-                        <!-- linha do cabeçalho -->
-                        <tr>
-                            <th>Nome da banda</th>
-                            <th>Local do show</th>
-                            <th>Data da Postagem</th>
-                            <th>Views</th>
-                        </tr>
-                    </thead>
-                    <!-- fim cabeçalho da tabela -->
-
-                    <!-- dados da tabela  -->
-                    <tbody class="text-center">
-
-                        <!-- 1a. linhda de dados -->
-                        <tr>
-                            <td>Banda XPTO</td>
-                            <td>Londres</td>
-                            <td>02/02/2020</td>
-                            <td>1.456.789</td>
-                        </tr>
-                        <!-- FIm 1a. linhda de dados -->
-
-                        <!-- 2a. linhda de dados -->
-                        <tr>
-                            <td>Banda XPTO</td>
-                            <td>Londres</td>
-                            <td>02/02/2020</td>
-                            <td>1.456.789</td>
-                            <!-- FIm 2a. linhda de dados -->
-                        </tr>
-
-                        <!-- 3a. linhda de dados -->
-                        <tr>
-                            <td>Banda XPTO</td>
-                            <td>Londres</td>
-                            <td>02/02/2020</td>
-                            <td>1.456.789</td>
-                        </tr>
-                        <!-- FIm 3a. linhda de dados -->
-
-                        <!--4a. linhda de dados -->
-                        <tr>
-                            <td>Banda XPTO</td>
-                            <td>Londres</td>
-                            <td>02/02/2020</td>
-                            <td>1.456.789</td>
-                        </tr>
-                        <!-- FIm 4a. linhda de dados -->
-
-                        <!-- 5a. linhda de dados -->
-                        <tr>
-                            <td>Banda XPTO</td>
-                            <td>Londres</td>
-                            <td>02/02/2020</td>
-                            <td>1.456.789</td>
-                        </tr>
-                        <!-- FIm 5a. linhda de dados -->
-                    </tbody>
-                    <!-- Fim dados da tabela  -->
-
-                    <!-- rodapé da tabela -->
-                    <tfoot>
-                        <tr class="text-center">
-                            <td colspan="4">Dados atualizados: 08/09/2021</td>
-                        </tr>
-                    </tfoot>
-                    <!-- fim rodapé da tabela -->
-
-                </table>
-            </div>
-
-        </div>
-    </div>
 
     <!-- Option 1: Bootstrap Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
